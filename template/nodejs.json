@@ -10,7 +10,7 @@ metadata:
     description: "An example Node.js application with a MongoDB database."
     iconClass: icon-nodejs
     template.openshift.io/bindable: "false"
-  name: nodejs
+  name: nodejssample
 objects: 
   - 
     apiVersion: v1
