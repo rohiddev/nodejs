@@ -56,7 +56,7 @@ objects:
         sourceStrategy: 
           from: 
             kind: ImageStreamTag
-            name: "nodejs:12"
+            name: "nodejs:10"
             namespace: openshift
         type: Source
   - 
@@ -166,7 +166,7 @@ objects:
         app: "${APP_NAME}"
         app.kubernetes.io/part-of: "${APP_NAME}"
         app.openshift.io/runtime: NodeJS
-        app.openshift.io/runtime-version: "12"
+        app.openshift.io/runtime-version: "10"
       name: "${APP_NAME}"
     spec: 
       replicas: 1
