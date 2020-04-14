@@ -78,7 +78,7 @@ objects:
                     steps {
                       script {
                         openshift.withCluster() {
-                          openshift.withProject(env.DEMO_PROJECT) {
+                          openshift.withProject("${PROJECT}") {
                             openshift.startBuild("${APP_NAME}").logs("-f")
                           }
                         }
@@ -198,3 +198,8 @@ parameters:
     name: GIT_REF
     required: true
     value: master
+  - 
+    description: "project or namespace"
+    name: PROJECT
+    required: true
+    value: dev   
