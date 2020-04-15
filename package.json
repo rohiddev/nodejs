@@ -12,6 +12,6 @@
     "express": "^4.15.2"
   },
   "publishConfig": {
-    "registry":"http://nexus-cicd.apps.ocp-test.corp.oshft.com/repository/cfgnpm/"
+    "registry":"http://nexus-cicd.apps.ocp-smesh.corp.oshft.com/repository/cfgnpm/"
   }
 }
