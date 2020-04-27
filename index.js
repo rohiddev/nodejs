@@ -7,7 +7,7 @@ var app = express()
 app.get('/', function (req, res) {
   console.log('DEMO USER' + process.env.SECRETS_DEMO_USER)
   console.log('DEMO PASSWOR' + process.env.SECRETS_DEMO_USER_PASSWD)
-  res.send('Hello World!')
+  res.send('Hello hello World!!!!')
 })
 
 app.get('/hello', function (req, res) {
