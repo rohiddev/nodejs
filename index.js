@@ -10,6 +10,12 @@ app.get('/', function (req, res) {
   res.send('Hello World!')
 })
 
+app.get('/hello', function (req, res) {
+  console.log('DEMO USER' + process.env.SECRETS_DEMO_USER)
+  console.log('DEMO PASSWOR' + process.env.SECRETS_DEMO_USER_PASSWD)
+  res.send('Hello World!')
+})
+
 
 //Launch listening server on port 8081
 app.listen(8080, function () {
