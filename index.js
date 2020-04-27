@@ -1,25 +1,14 @@
-//Load express module with `require` directive
-var express = require('express')
-var app = express()
+var http = require("http");
 
+http.createServer(function (request, response) {
+   // Send the HTTP header 
+   // HTTP Status: 200 : OK
+   // Content Type: text/plain
+   response.writeHead(200, {'Content-Type': 'text/plain'});
+   
+   // Send the response body as "Hello World"
+   response.end('Hello World\n');
+}).listen(8080);
 
-//Define request response in root URL (/)
-app.get('/', function (req, res) {
-  console.log('DEMO USER' + process.env.SECRETS_DEMO_USER)
-  console.log('DEMO PASSWOR' + process.env.SECRETS_DEMO_USER_PASSWD)
-  res.send('Hello hello World!!!!')
-})
-
-app.get('/hello', function (req, res) {
-  console.log('DEMO USER' + process.env.SECRETS_DEMO_USER)
-  console.log('DEMO PASSWOR' + process.env.SECRETS_DEMO_USER_PASSWD)
-  res.send('Hello World!')
-})
-
-
-//Launch listening server on port 8081
-app.listen(8080, function () {
-  console.log('DEMO USER' + process.env.SECRETS_DEMO_USER)
-  console.log('DEMO PASSWOR' + process.env.SECRETS_DEMO_USER_PASSWD)
-  console.log('app listening on port 8080!')
-})
+// Console will print the message
+console.log('Server running at http://127.0.0.1:8080/');
