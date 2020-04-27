@@ -5,6 +5,8 @@ var app = express()
 
 //Define request response in root URL (/)
 app.get('/', function (req, res) {
+  console.log('DEMO USER' + process.env.SECRETS_DEMO_USER)
+  console.log('DEMO PASSWOR' + process.env.SECRETS_DEMO_USER_PASSWD)
   res.send('Hello World!')
 })
 
