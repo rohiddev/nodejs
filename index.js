@@ -21,5 +21,5 @@ app.get('/hello', function (req, res) {
 app.listen(8080, function () {
   console.log('DEMO USER' + process.env.SECRETS_DEMO_USER)
   console.log('DEMO PASSWOR' + process.env.SECRETS_DEMO_USER_PASSWD)
-  console.log('app listening on port 8081!')
+  console.log('app listening on port 8080!')
 })
