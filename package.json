@@ -8,17 +8,6 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    
-    "body-parser": "^ 1.15.2",
-		"cors": "^2.8.5",
-		"express": "^4.17.1",
-		"https": "^1.0.0",
-		"ldapjs": "^1.0.2",
-		"node-rest-client": "^3.1.0",
-		"query-string": "^6.10.1"
-    
-  },
   "publishConfig": {
     "registry":"http://nexus-cicd.apps.ocp-smesh.corp.oshft.com/repository/cfgnpm/"
   }
