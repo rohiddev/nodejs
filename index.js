@@ -12,7 +12,4 @@ http.createServer(function (request, response) {
    response.end('Hello World\n');
 }).listen(8080);
 
-// Console will print the message
-//console.log('Server running at http://127.0.0.1:8080/');
-//console.log('PROCESS.env.SECRETS_DEMO_USER_PASSWD' + process.env.SECRETS_DEMO_USER_PASSWD);
-//console.log('PROCESS.env.SECRETS_DEMO_USER' + process.env.SECRETS_DEMO_USER);
+
