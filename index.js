@@ -15,7 +15,7 @@ http.createServer(function (request, response) {
    
    // List S3 Bucket
    var params = {
-    Bucket: 'meh-ocp-dev-project-a', /* required */
+    Bucket: 'rohid-project-a', /* required */
    };
    s3.listObjects(params, function(err, data) {
     if (err) console.log(err, err.stack); // an error occurred
